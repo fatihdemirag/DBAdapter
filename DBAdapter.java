@@ -22,7 +22,7 @@ public class DBAdapter {
     private static final String DATABASE_NAME = "DB_NAME";
     private static final String DATABASE_TABLE = "TABLE_NAME";
     private static final int DATABASE_VERSION = 1;
-    private static final String TABLO_CREATE = "SQL QUERY";
+    private static final String TABLE_CREATE = "SQL QUERY";
     //<--Change-->
     // Constructor
     public DBAdapter(Context context) {
@@ -42,7 +42,7 @@ public class DBAdapter {
             Log.d("Create", "Creating the database");
 
             try {
-                db.execSQL(TABLO_CREATE);
+                db.execSQL(TABLE_CREATE);
             } catch (SQLException e) {
                 e.printStackTrace();
             }
